@@ -1,0 +1,254 @@
+
+/* =========================================
+   CONFIGURAÇÕES GERAIS
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f2f2;
+    color: #222;
+}
+
+
+/* =========================================
+   CABEÇALHO
+   ========================================= */
+
+.header {
+    background: #111;
+    border-bottom: 5px solid #e30613;
+    padding: 18px 20px;
+}
+
+.header-content {
+    max-width: 1100px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+
+    min-height: 75px;
+}
+
+
+/* =========================================
+   LOGO SESI — LADO DIREITO
+   ========================================= */
+
+.logo-sesi {
+    width: 115px;
+    height: auto;
+    display: block;
+
+    margin-left: auto;
+}
+
+
+/* =========================================
+   TÍTULO — CENTRALIZADO
+   ========================================= */
+
+.titulo {
+    position: absolute;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    text-align: center;
+
+    width: max-content;
+}
+
+.titulo h1 {
+    color: white;
+
+    font-size: 28px;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 5px;
+}
+
+.titulo p {
+    color: #ccc;
+
+    font-size: 15px;
+}
+
+
+/* =========================================
+   CONTEÚDO PRINCIPAL
+   ========================================= */
+
+.container {
+    max-width: 1000px;
+
+    margin: 45px auto;
+
+    padding: 0 20px;
+}
+
+.container h2 {
+    text-align: center;
+
+    font-size: 25px;
+
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    text-align: center;
+
+    color: #666;
+
+    margin-bottom: 35px;
+}
+
+
+/* =========================================
+   GRUPOS
+   ========================================= */
+
+.grupo {
+    background: white;
+
+    margin-bottom: 25px;
+
+    padding: 25px;
+
+    border-radius: 8px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.grupo h3 {
+    text-align: center;
+
+    color: #e30613;
+
+    font-size: 19px;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================
+   BOTÕES
+   ========================================= */
+
+.botoes {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 12px;
+}
+
+.botao {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    min-height: 55px;
+
+    background: #111;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    font-size: 15px;
+
+    border-radius: 5px;
+
+    transition: 0.2s;
+}
+
+.botao:hover {
+    background: #e30613;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   RODAPÉ
+   ========================================= */
+
+.footer {
+    margin-top: 50px;
+
+    padding: 25px 20px;
+
+    background: #111;
+
+    color: #aaa;
+
+    text-align: center;
+
+    border-top: 4px solid #e30613;
+}
+
+.footer p {
+    margin: 5px;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   RESPONSIVIDADE
+   ========================================= */
+
+@media (max-width: 800px) {
+
+    .botoes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .titulo h1 {
+        font-size: 22px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .header-content {
+        min-height: 100px;
+    }
+
+    .logo-sesi {
+        width: 90px;
+    }
+
+    .titulo h1 {
+        font-size: 18px;
+    }
+
+    .titulo p {
+        font-size: 12px;
+    }
+
+    .botoes {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        margin-top: 30px;
+    }
+
+}
+
