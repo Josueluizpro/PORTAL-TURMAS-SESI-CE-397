@@ -151,6 +151,7 @@ font-weight: bold;
 
 transition: background 0.2s;
 
+
 }
 
 .botao:hover {
@@ -217,7 +218,6 @@ RESPONSIVIDADE
 }
 
 @media (max-width: 600px) {
-
 
 .header-content {
     flex-direction: column;
